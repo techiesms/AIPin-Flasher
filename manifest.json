@@ -13,7 +13,7 @@
         },
 
         {
-          "path": "firmware/xiaozhi.bin,
+          "path": "firmware/xiaozhi.bin",
           "offset": "0x20000"
         },
 
