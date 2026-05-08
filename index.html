@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>XIAO ESP32-S3 Sense Installer</title>
+
+  <script
+    type="module"
+    src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js">
+  </script>
+
+  <style>
+
+    body{
+      margin:0;
+      background:#0f172a;
+      color:white;
+      font-family:Arial;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .card{
+      width:420px;
+      background:#111827;
+      padding:40px;
+      border-radius:20px;
+      text-align:center;
+      box-shadow:0 0 20px rgba(0,0,0,0.3);
+    }
+
+    h1{
+      margin-top:0;
+      font-size:32px;
+    }
+
+    p{
+      opacity:0.8;
+      line-height:1.6;
+    }
+
+    .steps{
+      text-align:left;
+      margin-top:30px;
+      margin-bottom:30px;
+    }
+
+    .steps li{
+      margin-bottom:10px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>XIAO ESP32-S3 Sense</h1>
+
+<p>
+Flash firmware directly from Chrome browser.
+</p>
+
+<div class="steps">
+
+<ol>
+<li>Connect board via USB</li>
+<li>Open Chrome browser</li>
+<li>Click Connect</li>
+<li>Select USB Serial Port</li>
+<li>Wait for flashing to complete</li>
+</ol>
+
+</div>
+
+<esp-web-install-button manifest="manifest.json">
+</esp-web-install-button>
+
+</div>
+
+</body>
+
+</html>
